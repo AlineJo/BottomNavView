@@ -16,5 +16,6 @@ public class SimpleBottomNavActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_bottom_nav);
         mBottomNav = findViewById(R.id.bottom_nav);
+
     }
 }
