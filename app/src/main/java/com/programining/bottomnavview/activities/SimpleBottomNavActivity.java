@@ -22,8 +22,8 @@ public class SimpleBottomNavActivity extends AppCompatActivity implements Mediat
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_bottom_nav);
-        BottomNavigationView mBottomNav = findViewById(R.id.bottom_nav);
-        mBottomNav.setOnNavigationItemSelectedListener(this);
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_nav);
+        bottomNav.setOnNavigationItemSelectedListener(this);
         changeFragmentTo(new HomeFragment(), HomeFragment.class.getSimpleName());
     }
 
