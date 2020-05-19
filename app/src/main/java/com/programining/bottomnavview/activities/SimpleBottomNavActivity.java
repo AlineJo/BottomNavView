@@ -9,6 +9,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.programining.bottomnavview.R;
+import com.programining.bottomnavview.fragments.HomeFragment;
 import com.programining.bottomnavview.interfaces.MediatorInterface;
 
 public class SimpleBottomNavActivity extends AppCompatActivity implements MediatorInterface {
@@ -19,7 +20,7 @@ public class SimpleBottomNavActivity extends AppCompatActivity implements Mediat
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_bottom_nav);
         mBottomNav = findViewById(R.id.bottom_nav);
-
+        changeFragmentTo(new HomeFragment(), HomeFragment.class.getSimpleName());
     }
 
 
