@@ -17,13 +17,12 @@ import com.programining.bottomnavview.fragments.NotificationsFragment;
 import com.programining.bottomnavview.interfaces.MediatorInterface;
 
 public class SimpleBottomNavActivity extends AppCompatActivity implements MediatorInterface, BottomNavigationView.OnNavigationItemSelectedListener {
-    private BottomNavigationView mBottomNav;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_simple_bottom_nav);
-        mBottomNav = findViewById(R.id.bottom_nav);
+        BottomNavigationView mBottomNav = findViewById(R.id.bottom_nav);
         mBottomNav.setOnNavigationItemSelectedListener(this);
         changeFragmentTo(new HomeFragment(), HomeFragment.class.getSimpleName());
     }
